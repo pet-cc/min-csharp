@@ -31,7 +31,7 @@ CREATE TABLE autor(
 
 CREATE TABLE noticia(
     NOT_ID     int NOT NULL AUTO_INCREMENT,
-    NOT_TITULO varchar(50) NOT NULL ,
+    NOT_TITULO varchar(255) NOT NULL ,
     NOT_TEXTO  text NULL ,
     NOT_DATA   date NOT NULL ,
     AUT_ID     int NULL ,
