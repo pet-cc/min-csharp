@@ -19,7 +19,7 @@ namespace DAL{
                 MySqlCommand cmd = new MySqlCommand(sql, conn);
                 //Parâmetros da Query
                 cmd.Parameters.AddWithValue("CID_NOME", item.CID_NOME);
-                cmd.Parameters.AddWithValue("CID_UF", item.CID_UF);
+                cmd.Parameters.AddWithValue("CID_UF", item.CID_UF.ToArray());
                 //Abre a conexão com o banco
                 conn.Open();
                 //Executa a Query

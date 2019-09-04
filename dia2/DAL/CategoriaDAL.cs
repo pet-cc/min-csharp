@@ -103,7 +103,7 @@ namespace DAL{
                 MySqlDataReader dados = cmd.ExecuteReader();
                 List<Categoria> resultados = new List<Categoria>();
                 while(dados.Read()){
-                    Categoria cid = new Categoria();
+                    Categoria cat = new Categoria();
                     cat.CAT_ID = Convert.ToInt32(dados[0].ToString());
                     cat.CAT_NOME = dados[1].ToString();
                     resultados.Add(cat);

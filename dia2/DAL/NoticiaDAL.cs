@@ -125,7 +125,7 @@ namespace DAL{
                     aut.AUT_ID = Convert.ToInt32(dados[5].ToString());
                     not.AUT = aut;
                     not.CAT = cat;
-                    resultados.Add(aut);
+                    resultados.Add(not);
                 }
 
                 return resultados;
